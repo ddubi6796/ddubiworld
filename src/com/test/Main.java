@@ -1,12 +1,12 @@
 package com.test;
 
-import com.test.solution.BruteForce_42839;
+import com.test.solution.Greedy_42883;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		BruteForce_42839 test = new BruteForce_42839();
+		Greedy_42883 test = new Greedy_42883();
 		
 		//해시_완주하지 못한 선수
 		//String[] participand = {"mislav", "stanko", "mislav", "ana"};
@@ -72,8 +72,17 @@ public class Main {
 		//System.out.println(BruteForce_42840.solution(answers).toString());
 		
 		//완전탐색_소수 찾기
-		String numbers = "011";
-		System.out.println(test.solution(numbers));
+		//String numbers = "011";
+		//System.out.println(test.solution(numbers));
+		
+		//탐욕법(Greedy)_조이스틱
+		//String name = "JEROEN";
+		//System.out.println(test.solution(name));
+
+		//탐욕법(Greedy)_큰 수 만들기
+		String number = "1924";
+		int k = 2;
+		System.out.println(test.solution(number, k));
 	}
 	
 
