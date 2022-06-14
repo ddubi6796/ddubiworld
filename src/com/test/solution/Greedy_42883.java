@@ -1,6 +1,5 @@
 package com.test.solution;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -10,11 +9,7 @@ public class Greedy_42883 {
     	String[] numArr = number.split("");
     	
     	Arrays.sort(numArr, Collections.reverseOrder());
-    	
-//    	for(int i=0; i<k; i++) {
-//    		number = number.replaceFirst(numArr[i], "");
-//    	}
-    	
+	
     	int cnt = k;
     	while(cnt > 0 && answer.length() < numArr.length-k) {
         	for(int i=0; i<numArr.length; i++) {
@@ -28,17 +23,6 @@ public class Greedy_42883 {
         	}
     	}
     	
-//        for(int i=0; i<k; i++) {
-//        	BigInteger answer = new BigInteger("0");
-//        	for(int j=0; j<number.length(); j++) {
-//        		String tempStr = number.substring(0, j) + number.substring(j+1, number.length());
-//        		BigInteger tempInt = new BigInteger(tempStr);
-//        		
-//        		answer = answer.compareTo(tempInt) > 0 ? answer : tempInt;
-//        	}
-//        	number = String.format("%0"+String.valueOf(number.length()-1)+"d", answer);
-//        }
-        
     	if(cnt > 0)	return answer;
     	
         return answer + number;
