@@ -1,12 +1,12 @@
 package com.test;
 
-import com.test.solution.Greedy_42884;
+import com.test.solution.DP_42897;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		Greedy_42884 test = new Greedy_42884();
+		DP_42897 test = new DP_42897();
 		
 		//해시_완주하지 못한 선수 Hash_42576
 		//String[] participand = {"mislav", "stanko", "mislav", "ana"};
@@ -102,8 +102,28 @@ public class Main {
 		
 		//탐욕법(Greedy)_단속카메라 Greedy_42884
 		//int[][] routes = {{-20,-15}, {-14,-5}, {-18,-13}, {-5,-3}};
-		int[][] routes = {{0,1}, {2,3}, {4,5}, {6,7}};
-		System.out.println(test.solution(routes));
+		//int[][] routes = {{0,1}, {2,3}, {4,5}, {6,7}};
+		//System.out.println(test.solution(routes));
+		
+		//동적계획법(Dynamic Programming)_N으로 표현 DP_42895
+		//int N = 5;
+		//int number = 12;
+		//System.out.println(test.solution(N, number));
+		
+		//동적계획법(Dynamic Programming)_정수 삼각형 DP_43105
+		//int[][] triangle = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}};
+		//System.out.println(test.solution(triangle));
+		
+		//동적계획법(Dynamic Programming)_등굣길 DP_42898
+		//int m = 5;
+		//int n = 3; 
+		//int[][] puddles = {{2,2}, {3,3}, {4,1}};
+		//System.out.println(test.solution(m, n, puddles));
+		
+		//동적계획법(Dynamic Programming)_도둑질 DP_42897
+		int[] money = {1000, 2, 3, 500, 4, 0, 2000, 4000}; // 4502
+		//int[] money = {0, 0, 4, 5, 4};	// 8
+		System.out.println(test.solution(money));
 	}
 	
 
