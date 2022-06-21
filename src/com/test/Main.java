@@ -1,12 +1,12 @@
 package com.test;
 
-import com.test.solution.DP_42897;
+import com.test.solution.DFSBFS_43164;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		DP_42897 test = new DP_42897();
+		DFSBFS_43164 test = new DFSBFS_43164();
 		
 		//해시_완주하지 못한 선수 Hash_42576
 		//String[] participand = {"mislav", "stanko", "mislav", "ana"};
@@ -121,9 +121,29 @@ public class Main {
 		//System.out.println(test.solution(m, n, puddles));
 		
 		//동적계획법(Dynamic Programming)_도둑질 DP_42897
-		int[] money = {1000, 2, 3, 500, 4, 0, 2000, 4000}; // 4502
+		//int[] money = {1000, 2, 3, 500, 4, 0, 2000, 4000}; // 4502
 		//int[] money = {0, 0, 4, 5, 4};	// 8
-		System.out.println(test.solution(money));
+		//System.out.println(test.solution(money));
+		
+		//깊이/너비 우선 탐색(DFS/BFS)_타겟 넘버 DFSBFS_43165
+		//int[] numbers = {1, 1, 1, 1, 1};
+		//int target = 3; // 5
+		//System.out.println(test.solution(numbers, target));
+		
+		//깊이/너비 우선 탐색(DFS/BFS)_네트워크 DFSBFS_43162
+		//int n = 4;
+		//int[][] computers = {{1, 0, 0, 0}, {0, 1, 0, 1}, {0, 1, 1, 0}, {1, 0, 0, 1}}; // 1
+		//System.out.println(test.solution(n, computers));
+		
+		//깊이/너비 우선 탐색(DFS/BFS)_단어 변환 DFSBFS_43163
+		//String begin = "hit";
+		//String target = "cog";
+		//String[] words = {"hot", "dot", "dog", "lot", "log", "cog"}; // 4
+		//System.out.println(test.solution(begin, target, words));
+		
+		//깊이/너비 우선 탐색(DFS/BFS)_여행경로 DFSBFS_43164
+		String[][] tickets = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}}; // ["ICN", "ATL", "ICN", "SFO", "ATL", "SFO"]
+		System.out.println(test.solution(tickets));
 	}
 	
 
