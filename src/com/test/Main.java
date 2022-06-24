@@ -1,12 +1,12 @@
 package com.test;
 
-import com.test.solution.DFSBFS_43164;
+import com.test.solution.BinarySearch_43236;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		DFSBFS_43164 test = new DFSBFS_43164();
+		BinarySearch_43236 test = new BinarySearch_43236();
 		
 		//해시_완주하지 못한 선수 Hash_42576
 		//String[] participand = {"mislav", "stanko", "mislav", "ana"};
@@ -141,9 +141,23 @@ public class Main {
 		//String[] words = {"hot", "dot", "dog", "lot", "log", "cog"}; // 4
 		//System.out.println(test.solution(begin, target, words));
 		
-		//깊이/너비 우선 탐색(DFS/BFS)_여행경로 DFSBFS_43164
-		String[][] tickets = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}}; // ["ICN", "ATL", "ICN", "SFO", "ATL", "SFO"]
-		System.out.println(test.solution(tickets));
+		//깊이/너비 우선 탐색(DFS/BFS)_여행경로 DFSBFS_43164		
+		//String[][] tickets = {{"ICN","A"}, {"A","C"}, {"A","D"}, {"D","B"}, {"B","A"}};
+		//String[][] tickets = {{"B", "ICN"}, {"ICN", "A"}, {"ICN", "B"}, {"A", "B"}, {"B", "ICN"}};  // ["ICN", "A", "B", "ICN", "B", "ICN"]
+		//String[][] tickets = {{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}}; // ["ICN", "JFK", "HND", "IAD"]
+		//String[][] tickets = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}}; // ["ICN", "ATL", "ICN", "SFO", "ATL", "SFO"]
+		//System.out.println(test.solution(tickets).toString());
+		
+		//이분탐색_입국심사 BinarySearch_43238
+		//int n = 6;
+		//int[] times = {7, 10};	//15
+		//System.out.println(test.solution(n, times));
+		
+		//이분탐색_징검다리 BinarySearch_43236
+		int distance = 25;
+		int[] rocks = {2, 14, 11, 21, 17};
+		int n = 2;	//4
+		System.out.println(test.solution(distance, rocks, n));
 	}
 	
 
