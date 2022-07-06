@@ -1,12 +1,12 @@
 package com.test;
 
-import com.test.solution.BinarySearch_43236;
+import com.test.solution.Graph_49190;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		BinarySearch_43236 test = new BinarySearch_43236();
+		Graph_49190 test = new Graph_49190();
 		
 		//해시_완주하지 못한 선수 Hash_42576
 		//String[] participand = {"mislav", "stanko", "mislav", "ana"};
@@ -154,10 +154,25 @@ public class Main {
 		//System.out.println(test.solution(n, times));
 		
 		//이분탐색_징검다리 BinarySearch_43236
-		int distance = 25;
-		int[] rocks = {2, 14, 11, 21, 17};
-		int n = 2;	//4
-		System.out.println(test.solution(distance, rocks, n));
+		//int distance = 25;
+		//int[] rocks = {2, 14, 11, 21, 17};
+		//int n = 2;	//4
+		//System.out.println(test.solution(distance, rocks, n));
+		
+		//그래프_가장 먼 노드 Graph_49189
+		//int n = 6;
+		//int[][] edge = {{3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2}};
+		//System.out.println(test.solution(n, edge));
+		
+		//그래프_순위 Graph_49191
+		//int n = 5;
+		//int[][] results = {{4, 3}, {4, 2}, {3, 2}, {1, 2}, {2, 5}};
+		//int[][] results = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
+		//System.out.println(test.solution(n, results));
+		
+		//그래프_방의 개수 Graph_49190
+		int[] arrows = {6, 6, 6, 4, 4, 4, 2, 2, 2, 0, 0, 0, 1, 6, 5, 5, 3, 6, 0};
+		System.out.println(test.solution(arrows));
 	}
 	
 
